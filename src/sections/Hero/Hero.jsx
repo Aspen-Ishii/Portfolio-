@@ -48,8 +48,8 @@ function Hero() {
         <p>
             with a strong passion for creating visually appealing and user-friendly 
             web applications. Eager to collaborate with a dynamic team and 
-            contribute my skills towards solving real-world problems and creating 
-            meaningful solutions.
+            contribute my skills towards creating meaningful solutions for real-world 
+            problems.
         </p>
         <a href={CV} download>
             <button className="hover" >
