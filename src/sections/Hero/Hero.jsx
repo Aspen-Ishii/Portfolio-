@@ -25,6 +25,7 @@ function Hero() {
         alt="Profile picture of Aspen Ishii" 
         />
         <img 
+        className={styles.colorMode}
         src={themeIcon} 
         alt="light/dark mode icon" 
         onClick={toggleTheme}
@@ -45,8 +46,8 @@ function Hero() {
             <img src={LinkedinIcon} alt="Linkedin Icon"/>
             </a>
         </span>
-        <p>
-            with a strong passion for creating visually appealing and user-friendly 
+        <p className={styles.description}>
+            With a strong passion for creating visually appealing and user-friendly 
             web applications. Eager to collaborate with a dynamic team and 
             contribute my skills towards creating meaningful solutions for real-world 
             problems.
