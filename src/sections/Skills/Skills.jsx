@@ -13,9 +13,9 @@ function Skills() {
     <section id="skills" className={styles.container}>
         <h1 className="sectionTitle">Skills</h1>
             <div className={styles.skillList}>
-            <SkillList src ={checkMarkIcon} skill="HTML" />
-            <SkillList src ={checkMarkIcon} skill="CSS" />
-            <SkillList src ={checkMarkIcon} skill="JavaScript" />
+            <SkillList src ={checkMarkIcon} skill="HTML5" />
+            <SkillList src ={checkMarkIcon} skill="CSS3" />
+            <SkillList src ={checkMarkIcon} skill="JavaScript ES6" />
             <SkillList src ={checkMarkIcon} skill="Node.js" />
             <SkillList src ={checkMarkIcon} skill="TypeScript" />
             </div>
