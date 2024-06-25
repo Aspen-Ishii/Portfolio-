@@ -6,7 +6,7 @@ const currentYear = currentDate.getFullYear();
 function Footer() {
   return (
     <section id='footer' className={styles.containter}>
-        <p>&copy; {currentYear} Aspen Ishii. <br />
+        <p>&copy;{currentYear} Aspen Ishii. <br />
         All rights reserved.
         </p>
     </section>
