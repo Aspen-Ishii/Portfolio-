@@ -11,7 +11,7 @@ function App() {
 
   return (
   <>
-    <Nav />
+    <Nav /> 
     <Hero />
     <Projects />
     <Skills />
