@@ -43,47 +43,36 @@ nav a:hover {
 nav li:first-child{
     margin-right: auto;
 }
-/*
 
-
-
-
-
-
-.container {
-    background-color: #222;
-    color: var(--btn-text-color);
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.sidebar{
+    position: fixed;
     top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff45;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px, 0, 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-a {
-    
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-inline-start: 0;
-    margin-block: 0;
-    height: 100%;
-    flex-direction: row;
+.sidebar li {
+    width: 100%;
 }
 
-ul > a {
-    color: inherit;
-    text-decoration: none;
-    font-family: "Roboto-Mono", monospace;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-inline-start: 0;
-    margin-block: 0;
-    height: 100%;
-    flex-direction: row;
-  }
+.sidebar a {
+    width: 100%;
+}
 
-   */
+.sidebarVisible {
+    display: flex; /* Make the sidebar visible */
+}
+
+.closeSidebar {
+    align-self: flex-end; /* Align the close icon to the end of the sidebar */
+    cursor: pointer;
+}
