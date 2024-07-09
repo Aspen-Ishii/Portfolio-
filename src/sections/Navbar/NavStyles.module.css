@@ -76,3 +76,22 @@ nav li:first-child{
     align-self: flex-end; /* Align the close icon to the end of the sidebar */
     cursor: pointer;
 }
+
+.menuBTN {
+    display: none;
+}
+
+@media(max-width: 800px)  {
+    .hideOnMobile{
+        display: none;
+    }
+    .menuBTN {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        max-width: 100%;
+    }
+}

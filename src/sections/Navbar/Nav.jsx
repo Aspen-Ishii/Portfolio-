@@ -33,19 +33,19 @@ function Nav() {
           <li>
             <a>Aspen Ishii</a>
           </li>
-          <li>
+          <li className={styles.hideOnMobile}>
             <a href='#hero'>About me</a>
           </li>
-          <li>
+          <li className={styles.hideOnMobile}>
             <a href='#Projects'>Projects</a>
           </li>
-          <li>
+          <li className={styles.hideOnMobile}>
             <a href='#skills'>Skills</a>
           </li>
-          <li>
+          <li className={styles.hideOnMobile}>
             <a href='#contact'>Contact</a> 
           </li>
-          <li onClick={toggleSidebar}>
+          <li className={styles.menuBTN} onClick={toggleSidebar}>
             <a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> 
           </li>
         </ul>
