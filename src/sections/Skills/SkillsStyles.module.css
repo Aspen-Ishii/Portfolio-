@@ -21,6 +21,16 @@
     flex-wrap: wrap;
     row-gap: 40px;
     max-width: 26ch;
+    height: 28px;
+       
+}
+
+.iconLight {
+  color: #000000;
+}
+
+.iconDark {
+  color: #FFFFFF;
 }
 
 hr {

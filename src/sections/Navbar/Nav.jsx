@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './NavStyles.module.css'
+import styles from './NavStyles.module.css';
 
 function Nav() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
