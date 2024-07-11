@@ -1,9 +1,10 @@
-
-
-* {
+@media (prefers-reduced-motion: no-preference) { /* Add scrolling */
+    * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-}
+     
+}}
 
 body {
     min-height: 100vh;
@@ -52,17 +53,17 @@ nav li:first-child{
 .sidebar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%; /* Hidden by default */ 
     height: 100vh;
     width: 250px;
     z-index: 999;
     background-color: #ffffff45;
     backdrop-filter: blur(10px);
     box-shadow: -10px, 0, 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default */
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    transition: .75s ease-in-out;
 }
 
 .sidebar li {
@@ -74,7 +75,31 @@ nav li:first-child{
 }
 
 .sidebarVisible {
-    display: flex; /* Make the sidebar visible */
+    right: 0; /* Make the sidebar visible */
+}
+
+.sidebarVisible #overlay {
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900; /* Should be less than the sidebar's z-index */
+    display: none; /* Hidden by default */
+}
+
+.sidebarVisible ~ .overlay {
+    display: block; /* Show the overlay when sidebar is visible */
 }
 
 .closeSidebar {
@@ -88,10 +113,11 @@ nav li:first-child{
 
 @media(max-width: 800px)  {
     .hideOnMobile{
-        display: none;
+        display: none; 
     }
     .menuBTN {
         display: block;
+    
     }
 }
 
