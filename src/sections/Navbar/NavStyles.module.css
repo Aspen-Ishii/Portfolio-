@@ -40,6 +40,11 @@ nav a:hover {
     background-color: #0887F2;
 }
 
+/* Override hover effect for the first list item */
+nav li:first-child a:hover {
+    background-color: initial;
+  }
+
 nav li:first-child{
     margin-right: auto;
 }
