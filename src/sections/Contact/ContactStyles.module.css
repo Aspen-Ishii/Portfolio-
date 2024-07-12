@@ -32,7 +32,7 @@ input, textarea {
 }
 
 ::placeholder {
-    color: var(--form-text-color)
+    color: #888
 }
 
 input[ type='submit'] {
