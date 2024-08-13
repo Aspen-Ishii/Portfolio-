@@ -41,6 +41,10 @@ hr {
     margin: 30px auto;
 }
 
+.skillList:last-child {
+  margin-bottom: auto auto;
+}
+
 @media (width >= 800px) {
     .skillList {
       max-width: fit-content;

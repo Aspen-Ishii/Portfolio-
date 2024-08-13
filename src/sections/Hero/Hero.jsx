@@ -1,5 +1,6 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-img.png';
+
+import headShot from '../../assets/20231101_120937.jpg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -21,7 +22,7 @@ function Hero() {
   <div className={styles.colorModeContainer}>
         <img 
         className={styles.hero}
-        src= {heroImg} 
+        src= {headShot} 
         alt="Profile picture of Aspen Ishii" 
         />
         <img 
@@ -47,10 +48,9 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>
-            With a strong passion for creating visually appealing and user-friendly 
-            web applications. Eager to collaborate with a dynamic team and 
-            contribute my skills towards creating meaningful solutions for real-world 
-            problems.
+            With a keen interest in developing visually appealing modern front-ends.
+            Eager to collaborate with a dynamic team and contribute to projects that 
+            enhance user experience and functionality.
         </p>
         <a href={CV} download>
             <button className="hover" >

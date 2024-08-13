@@ -9,13 +9,13 @@ function Contact() {
                 <label htmlFor='name' hidden>
                     Name
                 </label>
-                <input type="text" name="name" id="name" placeholder='Name' required/>
+                <input type="text" name="name" id="name" placeholder='Name' required autoComplete='off'/>
             </div>
             <div className="formGroup">
                 <label htmlFor='email' hidden>
                     Email
                 </label>
-                <input type="text" name="email" id="email" placeholder='Email Address' required/>
+                <input type="email" name="email" id="email" placeholder='Email Address' required/>
             </div>
             <div className="formGroup">
                 <label htmlFor='subject' hidden>
@@ -27,12 +27,13 @@ function Contact() {
                 <label htmlFor='Message' hidden>
                     Message
                 </label>
-                <textarea name="message" id="message" placeholder='Message' required></textarea>
+                <textarea name="message" id="message" placeholder='Message' required autoComplete='off'></textarea>
             </div>
             <input className='hover btn' type="submit" value="Submit" />
             </form>
         </section>
   );
 }
+
 
 export default Contact;
